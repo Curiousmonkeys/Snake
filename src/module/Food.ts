@@ -1,10 +1,10 @@
 /*
  * @Description: 
  * @Version: 2.0
- * @Autor: 庄鸿凯
+ * @Autor: Curiousmonkeys
  * @Date: 2022-04-27 00:22:24
- * @LastEditors: 庄鸿凯
- * @LastEditTime: 2022-04-29 19:31:17
+ * @LastEditors: Curiousmonkeys
+ * @LastEditTime: 2022-04-30 02:24:56
  */
 class Food {
     // 定义一个属性表示食物所对应的元素

@@ -1,10 +1,10 @@
 /*
  * @Description: 
  * @Version: 2.0
- * @Autor: 庄鸿凯
+ * @Autor: Curiousmonkeys
  * @Date: 2022-04-27 00:27:36
- * @LastEditors: 庄鸿凯
- * @LastEditTime: 2022-04-30 02:13:10
+ * @LastEditors: Curiousmonkeys
+ * @LastEditTime: 2022-04-30 02:24:46
  */
 class Snake {
     // 表示蛇头的元素
