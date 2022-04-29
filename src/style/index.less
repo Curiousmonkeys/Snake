@@ -1,0 +1,77 @@
+* {
+  padding: 0;
+  margin: 0;
+  //   盒模型
+  box-sizing: border-box;
+}
+body {
+  font: bold 20px "Courier";
+}
+// 主窗口
+#main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 360px;
+  height: 420px;
+  background-color: #b7d4a8;
+  margin: 100px auto;
+  border: 10px solid black;
+  border-radius: 40px;
+  gap: 10px;
+  //   游戏窗口
+  #stage {
+    position: relative;
+    width: 304px;
+    height: 304px;
+    border: 2px solid black;
+    // 蛇的样式
+    #snake {
+      // snake里的div部分  每个蛇部分
+
+      & > div {
+        width: 10px;
+        height: 10px;
+        background-color: #000;
+        // 蛇之间缝隙
+        border: 1px solid #b7d4a8;
+        // 开启绝对定位  因为位置需要改变
+        position: absolute;
+      }
+      & div:first-child {
+        background-color: red;
+        z-index: 1;
+      }
+    }
+    #food {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-content: space-between;
+      width: 10px;
+      height: 10px;
+      position: absolute;
+      left: 40px;
+      top: 40px;
+      & > div {
+        width: 4px;
+        height: 4px;
+        background-color: #000;
+        // 转45度
+        transform: rotate(45deg);
+      }
+    }
+  }
+  //   计分
+  #score-panel {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    #game{
+      border-radius: 10px;
+      background-color: #b7d4a8;
+      cursor: pointer;
+    }
+  }
+}

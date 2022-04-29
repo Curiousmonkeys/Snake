@@ -1,0 +1,65 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font: bold 20px "Courier";
+}
+#main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 360px;
+  height: 420px;
+  background-color: #b7d4a8;
+  margin: 100px auto;
+  border: 10px solid black;
+  border-radius: 40px;
+  gap: 10px;
+}
+#main #stage {
+  position: relative;
+  width: 304px;
+  height: 304px;
+  border: 2px solid black;
+}
+#main #stage #snake > div {
+  width: 10px;
+  height: 10px;
+  background-color: #000;
+  border: 1px solid #b7d4a8;
+  position: absolute;
+}
+#main #stage #snake div:first-child {
+  background-color: red;
+  z-index: 1;
+}
+#main #stage #food {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: space-between;
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  left: 40px;
+  top: 40px;
+}
+#main #stage #food > div {
+  width: 4px;
+  height: 4px;
+  background-color: #000;
+  transform: rotate(45deg);
+}
+#main #score-panel {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+#main #score-panel #game {
+  border-radius: 10px;
+  background-color: #b7d4a8;
+  cursor: pointer;
+}
