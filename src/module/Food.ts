@@ -25,7 +25,7 @@ class Food {
         return this.element.offsetTop
     }
     // 修改食物坐标
-    change(snakeBody: HTMLCollection) {
+    change() {
         // 生成一个随机位置
         // x y 最小是0  最大是 300-10 =290 
         // 蛇移动一次一格  一格就是10 所以食物一定是整10

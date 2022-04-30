@@ -170,7 +170,7 @@ class GameControl {
             // 蛇长一节
             this.snake.addBody()
             // 食物位置修改
-            this.food.change(this.snake.bodies)
+            this.food.change()
         }
     }
 }
