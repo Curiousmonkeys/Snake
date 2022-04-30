@@ -98,8 +98,7 @@ class Snake {
     addBody() {
         // 向snake里加div
         // beforeend  结束标签之前
-        let div = document.createElement('div')
-        this.Snake.appendChild(div)
+        this.Snake.insertAdjacentHTML("beforeend", "<div></div>");
     }
     // 添加一个移动蛇身方法
     moveBody() {

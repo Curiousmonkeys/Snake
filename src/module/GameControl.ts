@@ -3,8 +3,8 @@
  * @Version: 2.0
  * @Autor: Curiousmonkeys
  * @Date: 2022-04-27 01:00:47
- * @LastEditors: Curiousmonkeys
- * @LastEditTime: 2022-04-30 02:24:53
+ * @LastEditors: 庄鸿凯
+ * @LastEditTime: 2022-04-30 15:51:32
  */
 import Food from './Food';
 import ScorePanel from './ScorePanel';
@@ -65,11 +65,11 @@ class GameControl {
         // 调用run方法
         this.run()
     }
-    touchStart(e: any) {
+    touchStart(e: TouchEvent) {
         this.originX = e.changedTouches[0].pageX
         this.originY = e.changedTouches[0].pageY
     }
-    touchEnd(e: any) {
+    touchEnd(e: TouchEvent) {
         this.newX = e.changedTouches[0].pageX
         this.newY = e.changedTouches[0].pageY
         if (Math.abs(this.newX - this.originX) > Math.abs(this.newY - this.originY)) {
